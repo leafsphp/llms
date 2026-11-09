@@ -1,0 +1,4 @@
+surfaces:
+  - "README.md"
+rules:
+  preset: leaf-writing

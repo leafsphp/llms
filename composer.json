@@ -1,0 +1,57 @@
+{
+    "name": "leafs/llms",
+    "description": "Generate llms.txt, AGENTS.md, CLAUDE.md, Cursor rules and agent skills for any PHP project",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "llms.txt",
+        "agents.md",
+        "claude",
+        "cursor",
+        "ai",
+        "php",
+        "leaf",
+        "laravel",
+        "symfony"
+    ],
+    "homepage": "https://leafphp.dev",
+    "authors": [
+        {
+            "name": "Michael Darko",
+            "email": "mickdd22@gmail.com",
+            "homepage": "https://mychi.netlify.app",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "symfony/console": "^6.4 || ^7.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "*",
+        "leafs/alchemy": "^5.0",
+        "pestphp/pest": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Leaf\\Llms\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/llms"
+    ],
+    "scripts": {
+        "test": "@php vendor/bin/alchemy test",
+        "lint": "@php vendor/bin/alchemy lint",
+        "fmt": "@php vendor/bin/alchemy fmt",
+        "ci": "@php vendor/bin/alchemy ci"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
